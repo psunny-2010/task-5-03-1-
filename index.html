@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-03-26</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+          body{
+            background-color: rgb(238, 240, 242);
+          }
+          main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+          }
+          #leftsec{
+             width: 40%;
+             height: 100vh;
+             padding-left: 40px;
+          }
+          .titlespan{
+            font-size: 2.4em;
+            color: #303030;
+          }
+          #leftsec h1{
+            font-size: 2.5rem;
+            font-weight: 500;
+            background: linear-gradient(to right,rgb(255, 128, 0),orangered,rgb(255, 128, 0));
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+          }
+          .button{
+            font-size: 1.3rem;
+            display:flex;
+            align-items:center;
+            color: black;
+            text-decoration: none;
+            letter-spacing: 1.5;
+            font-weight: 500;
+            gap: 8px;
+            margin-bottom: 130px;
+          }
+          .button span{
+            font-size: 1.5rem;
+              font-weight: 800;
+            color: rgb(249, 166, 11);
+          }
+          #leftsec h2{
+            font-size: 1.8rem;
+            font-weight:500 ;
+            margin-bottom:25px ;
+          }
+           #leftsec p{
+            font-size:1.3rem ;
+            color: rgb(116, 115, 115);
+            letter-spacing: 1.5;
+            line-height: 1.5;
+            margin-bottom: 40px;
+           }
+          #rightsec{
+                width: 60%;
+             height: 100vh;         
+            position: relative;
+          }
+          #rightsec .video{
+             height: 75%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 35px 0px 40px 35px;
+          }
+          .video iframe{
+             width: fit-content;
+            height: 100%;
+            aspect-ratio: 16/9;
+            display: block;
+          }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="leftsec">
+         <span class="titlespan">Smarter by Design</span>
+         <h1>Innovation Meets Execution</h1>
+         <a href="" class="button">Case Studies<span>&#8599;</span></a>
+         <h2>British Gas & WNS:15 Years of Innovation <br>
+             and Excellence</h2>
+         <p>Jess Johnson, Head of Operational Excellence at British <br>
+             Gas, shares how WNS' expertise in energy utilities and <br>
+              innovation helped drive high service levels, improve NPS <br>
+               and ensure continuity even through turbulence</p>
+
+                 <a href="" class="button">Read More<span>&#8599;</span></a>
+
+        </section>
+        <section id="rightsec">
+         <div class="video">
+                        <iframe  src="https://www.youtube.com/embed/_hSFICJZnXg?si=YtsZg9MWjlPDszNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+         </div>
+        </section>
+    </main>
+</body>
+</html>
